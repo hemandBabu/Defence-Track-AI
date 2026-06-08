@@ -1,9 +1,9 @@
 /*
- * TKMCE Defence Focus Club - Stylesheet
+ * Defence Track AI - Stylesheet
  * Modern Premium Glassmorphic / Cyber-Military Theme
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
 
 :root {
   --bg-primary: #F0F4FA;
@@ -196,9 +196,9 @@ header {
 
 .logo-text h1 {
   font-family: var(--font-brand);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   background: linear-gradient(135deg, var(--text-primary), var(--accent-cyan));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -236,8 +236,9 @@ nav ul {
 }
 
 .nav-tab:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.04);
+  color: var(--accent-cyan);
+  background: rgba(30, 64, 175, 0.08);
+  border-color: rgba(30, 64, 175, 0.2);
 }
 
 .nav-tab.active {
@@ -950,13 +951,18 @@ nav ul {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid var(--glass-border);
-  background: rgba(14, 21, 36, 0.5);
+  background: var(--glass-bg);
   border-radius: var(--radius-md);
   padding: 24px;
   transition: var(--transition);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .internship-card:hover {
   border-color: var(--accent-gold);
+  box-shadow: 0 12px 40px rgba(217, 119, 6, 0.12);
+  transform: translateY(-3px);
 }
 .internship-header {
   margin-bottom: 12px;
@@ -977,7 +983,7 @@ nav ul {
   display: flex;
   gap: 12px;
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-bottom: 12px;
   border-bottom: 1px solid var(--glass-border);
   padding-bottom: 8px;
